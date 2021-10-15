@@ -1,0 +1,16 @@
+{
+  "name": "node_newman",
+  "version": "1.0.0",
+  "description": "Readme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "newman-reporter-htmlextra": "^1.22.1",
+    "yargs": "^17.2.1"
+  }
+}
