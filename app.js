@@ -8,12 +8,8 @@ let argv = yargs.argv
 let postman_key = argv.postman_key;
 let collection_uid = argv.collection_uid;
 
-console.log(postman_key)
-console.log(collection_uid)
-
-//Postman API Key: PMAK-#####
-//Collection UUID:  9963739-####
-
+//console.log(postman_key)
+//console.log(collection_uid)
 
 if(postman_key){
 	let url = `https://api.getpostman.com/collections/${collection_uid}?apikey=${postman_key}`
@@ -24,10 +20,8 @@ axios.get(url,{
   	}
 })
 .then((response) => {
-	console.log(response.data);
     //get the response data and write to file.
     let responseString = JSON.stringify(response.data)
-        console.log(responseString);
 
     // create and populate the collection.json file
     fs.writeFile('collection.json', responseString, (err) => {
