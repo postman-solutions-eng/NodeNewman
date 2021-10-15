@@ -8,6 +8,11 @@ This utility was developed to show a 'better' practice when demoing Newman. Newm
 1. Obtain a Postman API key. Follow the instructions [here](https://learning.postman.com/docs/developer/intro-api/) on how to get a key. This will be used 
 2. Obtain the collection id. This can found selecting the collection and clicking on the 'info' icon.
 
+
+# What does it do
+
+
+
 Syntax: 
 ```
 node app.js --postman_key={YOUR_POSTMAN_API_KEY} --collection_uid={THE_COLLECTION_UID}
